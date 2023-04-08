@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet"
+	href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<!--  	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script> -->
+<!--  	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+<link rel="stylesheet"
+	href="//cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="//cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script
+	src="//cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <style>
+	a{
+		text-decoration: none;
+	}
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 1268px;
+            text-align: center;
+        }
+        td,th{
+            width: 120px;
+        }
+        button {
+            border: 0;
+        }
+		body{
+			background:
+		url(https://res.nba.cn/static/styles/images/teambg/lakers-bg.jpg)
+		no-repeat;
+	background-size: cover;
+	height: 1500px;
+		}
+		
+		.ww{
+			border: 1px solid white;
+			width: 100%;
+			height: 100px;
+		}
+		.ee{
+			position: relative;
+			border: 1px solid white;
+			width: 100%;
+			height: 1100px;
+			
+		}
+		.rr{
+			border: 1px solid white;
+			width: 100%;
+			height: 200px;
+			
+		}
+		.zg_k{
+			position: absolute;
+			margin-left:300px ;
+			margin-top: 40px;
+		}
+		.zg_l{
+			position: absolute;
+			margin-left:900px ;
+			margin-top: 40px;
+		}
+	
+		.tb{
+			margin:0 auto ;
+			width: 1160px;
+			margin-top:50px ;
+
+		}
+		.tbx{
+			position: absolute;
+			margin-left:1100px ;
+			margin-top:50px ;
+
+		}
+		.tbx1{
+			position: absolute;
+			margin-left:900px ;
+			margin-top:30px ;
+
+		}
+		.mg2{
+			width: 150px;
+			height: 150px;
+		}
+		#last {
+			width: 768px;
+			height: 25px;
+			border: none;
+			background-color: #d7237e;
+			color: white;
+			margin-left: 240px;
+			margin-top: 325px;
+		}
+		
+		.p,
+		.p1,
+		.p2,
+		.p3,
+		.p4 {
+			color: gray;
+			font-size: 9px;
+			text-align: center;
+			margin-top: 20px;
+			line-height: 2px;
+			
+		}
+		#lastt{
+			width: 100%;
+		}
+		.all{
+			background-color:#f5f5f5;
+			border: none;
+		}
+		.team-logo {
+	background:
+		url(https://res.nba.cn/static/styles/images/teamlogotit/lakers-logo.png)
+		left top no-repeat;
+	width: 340px;
+	height: 50px;
+	padding: 40px 0 20px 106px;
+	font-size: 16px;
+}
+
+.top1 {
+	list-style: none;
+	display: flex;
+	background-color: #441471;
+}
+
+.top {
+	background-color: #441471;
+	height: 160px;
+}
+
+.blog {
+	margin-right: 800px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.navbar-brand:hover {
+	background-color: #652a9c;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="qq">
+		<div
+		style="width: 172px; height: 182px; position: fixed; top: 300px; right: 0px; background-color: #FFFFFF; border: 1px 1px gray; z-index: 1">
+		<img src="https://res.nba.cn/static/app/android/apk_qr.png"
+			width="100px" height="100px"
+			style="margin-left: 40px; margin-top: 30px;" /><br /> <span
+			style="margin-left: 40px;">下载NBA APP</span><br /> <span style="">NBA官方资讯一手掌握</span>
+	</div>
+	<div class="top">
+		<div class="container">
+			<ul class="top1">
+				<li style="margin-top: 5px;"><img
+					src="//res.nba.cn/resource/mat1/chinanba/images/nbalogo/nba-icon.png?20220224"
+					width="60px"></li>
+				<li style="margin-top: 5px;"><img
+					src="https://res.nba.cn/static/styles/images/sina.png"
+					style="margin-left: 800px;"> <a
+					href="https://weibo.com/la_lakers"
+					style="color: white; font-size: 10px;">洛杉矶湖人队官方微博</a></li>
+			</ul>
+			<ul class="top1">
+				<li>
+					<div class="team-logo" style="height: 100px;">
+						<p>
+							<span class="regular" style="color: #fff;">常规赛&nbsp;&nbsp;28胜
+								- 35负</span> <span class="rank" style="color: #fff;">西部第9名</span> <br />
+							<a href="http://www.nba.com/lakers" style="color: #fff;"
+								target="_blank">English</a>
+						</p>
+					</div>
+				</li>
+				<li>
+					<div style="margin-left: 430px;">
+						<p style="color: white;">
+							<span>主教练&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;弗兰克
+								沃格尔</span> <br /> <span>分区&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;西部
+								| 太平洋分区</span> <br /> <span>球馆&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;斯台普斯中心</span>
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div style="width: 100%; background-color: #552582;">
+		<div style="background-color: #552582;" class="container">
+			<div>
+				<a class="navbar-brand" href="#" style="color: white;"></a> <a
+					class="navbar-brand" href="ScheduleQuery" style="color: white;">&nbsp;首页&nbsp;</a>
+				<a class="navbar-brand" href="view.jsp" style="color: white;">&nbsp;视频&nbsp;</a>
+				<a class="navbar-brand" href="news.jsp" style="color: white;">&nbsp;新闻&nbsp;</a>
+				<a class="navbar-brand" href="playerqueyServlet" style="color: white;">&nbsp;球员&nbsp;</a>
+				<a class="navbar-brand" href="queySevrlet" style="color: white;">&nbsp;赛程&nbsp;</a>
+				<a class="navbar-brand" href="statistics.html" style="color: white;">&nbsp;统计&nbsp;</a>
+				<a class="navbar-brand" href="photo.jsp" style="color: white;">&nbsp;图集&nbsp;</a>
+				<a class="navbar-brand" href="shopping.jsp" style="color: white;">&nbsp;商城&nbsp;</a>
+			</div>
+
+		</div>
+	</div>
+		<div class="ee">
+			 <table class="tb" style="background-color: white">
+        <tr style="height: 50px;background-color: gray;">
+            <td style="background-color: orange"><input type="button"  class="all"  value="全选"/ style="width: 100% ;background-color: orange"></td>
+            <td>商品</td>
+            <td>单价</td>
+            <td>数量</td>
+            <td>小计</td>
+            <td>操作</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="" class="getGoods"> </td>
+            <td><img src="img/car1.jpg" class="mg2">
+            </td>
+            <td class="price">242</td>
+            <td>
+                <button class="jian">-</button>
+                <span>1</span>
+                <button class="add">+</button>
+            </td>
+            <td class="total">242</td>
+            <td><a href="#" class="delete">删除</a></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name=""  class="getGoods"> </td>
+            <td><img src="img/car2.jpg" class="mg2"></td>
+            <td class="price">242</td>
+            <td>
+                <button class="jian">-</button>
+                <span>1</span>
+                <button class="add">+</button>
+            </td>
+            <td class="total">242</td>
+           <td><a href="#" class="delete">删除</a></td>
+        </tr>
+		<tr>
+		    <td><input type="checkbox" name=""  class="getGoods"> </td>
+		    <td><img src="img/car3.jpg" class="mg2"></td>
+		    <td class="price">242</td>
+		    <td>
+		        <button class="jian">-</button>
+		        <span>1</span>
+		        <button class="add">+</button>
+		    </td>
+		    <td class="total">242</td>
+		   <td><a href="#" class="delete">删除</a></td>
+		</tr>
+		<tr>
+		    <td><input type="checkbox" name=""  class="getGoods"> </td>
+		    <td><img src="img/car4.jpg" class="mg2"></td>
+		    <td class="price">242</td>
+		    <td>
+		        <button class="jian">-</button>
+		        <span>1</span>
+		        <button class="add">+</button>
+		    </td>
+		    <td class="total">242</td>
+		   <td><a href="#" class="delete">删除</a></td>
+		</tr>
+		<tr>
+		    <td><input type="checkbox" name=""  class="getGoods"> </td>
+		    <td><img src="img/car5.jpg" class="mg2"></td>
+		    <td class="price">242</td>
+		    <td>
+		        <button class="jian">-</button>
+		        <span>1</span>
+		        <button class="add">+</button>
+		    </td>
+		    <td class="total">242</td>
+		   <td><a href="#" class="delete">删除</a></td>
+		</tr>
+		<tr>
+		    <td><input type="checkbox" name=""  class="getGoods"> </td>
+		    <td><img src="img/car6.jpg" class="mg2"></td>
+		    <td class="price">242</td>
+		    <td>
+		        <button class="jian">-</button>
+		        <span>1</span>
+		        <button class="add">+</button>
+		    </td>
+		    <td class="total">242</td>
+		   <td><a href="#" class="delete">删除</a></td>
+		</tr>
+    </table>
+
+
+	<form action="alipay.trade.page.pay.jsp">
+		<span style="display: none;">	订单编号:<input type="text" name="out_trade_no" value="2412589545" ><br><br></span>
+		<span style="display: none;">	付款金额:<input type="text" name="total_amount"  value="726"><br><br></span>
+		<span style="display: none;">	订单名称:<input type="text" name="subject"  value="手办"><br><br></span>
+		<span style="display: none;">	商品介绍:<input type="text" name="body" value="看的"><br></span>
+		<button style="position: relative; left: 1200px ;top: 20px;background-color: orange;width: 100px;height: 30px">去结算</button>
+	</form>
+
+
+    <div class="tbx" style="width: 100px;position: relative; bottom: 50px">
+        <span style="color: white;">总计：</span>
+        <span class="sum" style="color: white">0</span>
+    </div>
+	<div>
+		<hr width="1240px" style="margin-top: 94px; background-color: dimgray;"  />
+	</div>
+		</div>
+    </div>
+    <div class="foot">
+		<iframe src="foot.jsp"
+			style="border: 0px; position: relative; top: 0px" width="100%"
+			height="400px"></iframe>
+	</div>
+   <script>
+ 
+		$(".delete").click(function() {
+			$(this).parent().parent().remove();
+		});
+        // 逻辑：
+        // 加载页面时，调用getSum 总价
+        getSum();
+        // 1.加减（小计）
+        // 加法
+        $(".add").click(function(){
+            // 1.1 算出数量变化
+            let num = parseInt($(this).prev().text());
+            num++;
+            $(this).prev().text(num);
+            // 1.2 算出 小计价格
+            let price = parseInt($(this).parent().prev().text());
+            $(this).parent().next().text(price*num);
+
+            // 调用 总价
+            getSum();
+        })
+        // 减法
+        $(".jian").click(function(){
+            //x 1.1 算出数量变化
+            let num = parseInt($(this).next().text());
+            num--;
+            if(num<1) num=1;
+            $(this).next().text(num);
+
+            // 1.2 算出 小计价格
+            let price = parseInt($(this).parent().prev().text());
+            $(this).parent().next().text(price*num);
+            // 调用 总价
+            getSum();
+        })
+
+        // 2. 总价 = 小计之和（选中条件下）
+
+        function getSum(){
+            let sum = 0;
+            for(let i=0;i<$('.total').length;i++){
+                // 添加 选中判断的条件
+                if($('.total').eq(i).parent().find('input').prop('checked')){
+                    sum += parseInt($('.total').eq(i).text())
+                }
+            }
+            $('.sum').text(sum);
+        }
+
+        // 3. 选中
+        // 选中：有三种表现形式  
+        // 1> 用户点击 出现 √    
+        // 2> 添加属性 checked    
+        // 3> js操作  attr()   /  prop('checked',true)
+        // 3.1 全选
+        $('.all').click(function(){
+        	 $('.getGoods').prop('checked',true);
+            // 调用 总价
+            getSum();
+        });
+        // 3.2 用户选中
+        $('.getGoods').click(function(){
+            // 其实已经选中了
+            
+            // 调用 总价
+            getSum();
+        });
+        
+    </script>
+</body>
+</html>

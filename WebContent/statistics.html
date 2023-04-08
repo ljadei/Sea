@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>统计</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+		<style type="text/css">
+			.header {
+				background-color: #006BB7;
+				height: 160px;
+
+			}
+
+			.navbar-nav li a {
+				padding-top: 4px;
+				padding-bottom: 0;
+				height: 50px;
+			}
+
+			#mm {
+				padding: 10px;
+			}
+
+			.navber {
+				min-height: 20px;
+			}
+
+			.imglanq {
+				border: 1px;
+				background-color: aliceblue;
+				width: 1220px;
+				height: 170px;
+				margin-left: -10px;
+			}
+
+			.nn {
+				position: relative;
+				top: -150px;
+				left: 150px;
+			}
+
+			.nn p {
+				margin: 2px;
+				padding: -10px;
+			}
+
+			.nn {
+				font-size: 12px;
+				font-family: "微软雅黑";
+			}
+
+			#vv {
+				padding: 5px;
+			}
+
+			#bb {
+				position: relative;
+				top: -270px;
+				left: 500px;
+			}
+
+			.content {
+				background-color: white;
+			}
+
+			.paiming {
+				margin-left: 700px;
+			}
+
+			#myTab {
+				margin-left: -10px;
+				width: 1220px;
+				height: 25px;
+				background-color: powderblue;
+				margin-top: -15px;
+				font-size: 12px;
+
+			}
+
+			#fonts {
+				font-size: 15px;
+				color: white;
+
+			}
+
+			#shuw {
+				background-color: #006BB7;
+				color: white;
+				width: 1220px;
+				height: 45px;
+				margin-left: -10px;
+				list-style: none;
+				padding-top: 10px;
+			}
+
+			.cjun {
+				margin-left: 55px;
+				margin-right: 40px;
+			}
+
+			.bg {
+				background-color: #F0F8FF;
+
+			}
+
+			.zms {
+				position: relative;
+				top: -200px;
+				left: 200px;
+				font-size: 60px;
+
+			}
+
+			.zmss {
+				position: relative;
+				top: -300px;
+				left: 280px;
+			}
+
+			.zmsss {
+				position: relative;
+				top: -495px;
+				left: 600px;
+			}
+
+			.zmsss {
+				background-color: #808080;
+				width: 80px;
+				height: 200px;
+				text-align: center;
+
+			}
+
+			.zmssss {
+				position: relative;
+				top: -695px;
+				left: 700px;
+			}
+
+			.gg {
+				background-color: gold;
+				list-style: none;
+				height: 30px;
+				width: 1220px;
+				margin-left: -10px;
+				margin-top: -20px;
+
+			}
+
+			.gg li {
+				float: left;
+				margin-left: 50px;
+				margin-right: 20px;
+				margin-top: 5px;
+			}
+
+			.shujux p {
+				font-size: 12px;
+				margin-top: 10px;
+			}
+
+			.shujux {
+				position: relative;
+				top: -890px;
+				left: 750px;
+			}
+
+			.shuzix {
+				position: relative;
+				top: -1100px;
+				left: 1050px;
+			}
+
+			.shuzix {
+				line-height: 35px;
+				font-size: 20px;
+				font-family: "微软雅黑";
+
+			}
+
+			#tabs-1,
+			#tabs-2,
+			#tabs-3,
+			#tabs-4,
+			#tabs-5,
+			#tabs-6,
+			#tabs-7,
+			#tabs-8,
+			#tabs-9 {
+				background-color: #B0E0E6;
+				width: 1220px;
+				height: 250px;
+				margin-left: -10px;
+				margin-top: -15px;
+			}
+            #ddbu{
+				margin-top: 50px;
+			}
+			.col-sm,
+			a {
+				color: gray;
+			}
+            .row{
+				 margin-top: 20px;
+			 }
+			.col-sm,
+			h5 {
+				color: #fff;
+			}
+
+			.col-sm,
+			a:hover {
+				color: gray;
+			}
+			
+		</style>
+		<script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="https://www.runoob.com/try/demo_source/jqueryui/style.css">
+		<script>
+			$(function() {
+				$("#tabs").tabs();
+			});
+		</script>
+	</head>
+	<body>
+		<div class=" text-center header">
+			<div class="text-center  container">
+				<a href="#"><img src="//res.nba.cn/static/images/app.png" width="60px"
+						style="margin-top: 10px;margin-left: 1200px;"></a>
+			</div>
+			<div class="text-center  container">
+				<a href="#">
+					<img src="//res.nba.cn/resource/mat1/chinanba/images/nbalogo/nba-icon.png?20220224" width="100px"
+						style="margin-top: px;margin-left: -950px;">
+				</a>
+			</div>
+
+			<nav class="navbar navbar-expand-sm bg-primay navbar-dark">
+				<!-- Brand -->
+				<!-- Links -->
+				<ul class="navbar-nav container" id="mm">
+					<li class="nav-item">
+						<a class="nav-link" href="ScheduleQuery">首页 </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="view.jsp">视频 </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="news.jsp">新闻 </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="photo.jsp">图集 </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="statistics.html">球队 </a>
+					</li>
+					<!-- Dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+							球员
+						</a>
+						<div class="dropdown-menu ">
+							<a class="dropdown-item" href="#">现役球员</a>
+							<a class="dropdown-item" href="#">退役球员</a>
+
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+							赛程
+						</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">赛程</a>
+							<a class="dropdown-item" href="#">季后赛</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+							排名
+						</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">联盟排名</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+							数据
+						</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">球员数据</a>
+							<a class="dropdown-item" href="#">球队数据</a>
+							<a class="dropdown-item" href="#">高级球员数据</a>
+							<a class="dropdown-item" href="#">联盟数据王</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+							专题
+						</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">NBA休赛期观察</a>
+							<a class="dropdown-item" href="#">NBA历史</a>
+							<a class="dropdown-item" href="#">NBA50大球明星</a>
+							<a class="dropdown-item" href="#">NBA扣响盛夏</a>
+							<a class="dropdown-item" href="#">犯规手册</a>
+							<a class="dropdown-item" href="#">NBA知识Q&A</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">不止篮球</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">NBA就业</a>
+					</li>
+
+				</ul>
+
+			</nav>
+			<div class="  container">
+				<a href="#">
+					<img src="//res.nba.cn/resource/mat1/chinanba/web/statics/icon_30_user_f91522.png" width="30px"
+						style="margin-top: -130px;z-index: 1; margin-right: -1350px;">
+				</a>
+			</div>
+		</div>
+		<div class="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<ul class="list-inline">
+							<li class="list-inline-item">
+								<a href="">
+									<span>
+										首页
+									</span>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="">
+									<span>
+										/球队列表/
+									</span>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="">
+									<span>
+										球队阵容
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="container " id="vv">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light "
+					style="width: 1220px;height: 50px;margin-top: 15px;">
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav" style="margin-top: 20px; ">
+							<li class="nav-item col-lg-4">
+								<a class="nav-link" href="#">资料 </a>
+							</li>
+							<li class="nav-item col-lg-4">
+								<a class="nav-link" href="#">赛程 </a>
+							</li>
+							<li class="nav-item col-lg-4">
+								<a class="nav-link" href="#">数据</a>
+							</li>
+							<li class="nav-item col-lg-4">
+								<a class="nav-link" href="#">数据王</a>
+							</li>
+							<li class="nav-item col-lg-4">
+								<a class="nav-link text-danger navitem" href="#">阵容 <span
+										class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item col-lg-4">
+								<a class="nav-link" href="#">热区</a>
+							</li>
+							<li class="nav-item col-lg-4">
+								<a class="nav-link" href="#">对比</a>
+							</li>
+						</ul>
+					</div>
+			</div>
+			<div>
+				<div class="container">
+					<div class="imglanq">
+						<p><span><img src="//res.nba.cn/media/img/teams/logos/LAL_logo.svg" width="150px"></span></p>
+						<div class="nn container">
+							<p>
+								<span><a href="#">
+										<h2>洛杉矶&nbsp;&nbsp;湖人
+									</a></h2></span>
+							</p>
+							<p>
+								<span><a href="#">西部联盟</a>
+									<span>中排名 #9</span>
+								</span>
+							</p>
+							<p>
+								<b>
+									<span>
+										连胜战绩
+									</span>:
+								</b> 负2
+							</p>
+							<p>
+								<b>
+									<span>教练</span>:
+								</b>
+								<span>弗朗克 沃格尔</span>
+							</p>
+						</div>
+						<div class="container" id="bb">
+							<p>
+								<span>
+									<h2>28<span>胜</span> —37
+										<span>负</span>
+									</h2>
+								</span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="container " id="fengshu">
+					<p class="paiming">
+						2021-2022 常规赛 排名
+					</p>
+				</div>
+				<div class="container ">
+					<!--数据王-->
+					<table>
+						<ul id="shuw">
+							<li>
+								<h5 style=" ">2021——2022数据王</h5>
+							</li>
+						</ul>
+					</table>
+				</div>
+				<div class="container">
+					<div id="tabs">
+						<ul class="gg">
+							<li><a href="#tabs-1">场均得分</a></li>
+							<li><a href="#tabs-2">场均篮板</a></li>
+							<li><a href="#tabs-3">场均助攻</a></li>
+							<li><a href="#tabs-4">场均抢断</a></li>
+							<li><a href="#tabs-5">场均盖帽</a></li>
+							<li><a href="#tabs-6">三分%</a></li>
+							<li><a href="#tabs-7">%</a></li>
+							<li><a href="#tabs-8">罚球</a></li>
+							<li><a href="#tabs-9">分钟</a></li>
+						</ul>
+						<div id="tabs-1">
+							<p><img src="//res.nba.cn/media/img/players/silos/440x700/2544.png" width="150px"
+									class="selected">
+							</p>
+							<div class="zms">
+								<!-- 詹姆斯-->
+								<p>
+
+									<span>1</span>
+								</p>
+							</div>
+							<div class="zmss">
+								<p>
+								<h3>
+									<span><a href="#">勒布朗</a>
+									</span>
+								</h3>
+								<h3>
+									<span><a href="#">詹姆斯</a>
+									</span>
+								</h3>
+								</p>
+								<p>
+									<b>
+										<span>
+											6前锋/
+										</span>:
+									</b> <a href="#">洛杉矶 湖人</a>
+								</p>
+								<p>
+									<span>
+										<h3>29.7<h3>
+									</span>
+								</p>
+							</div>
+							<div class="zmsss">
+								<p>
+									<span>
+										<h3>2</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>3</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>4</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>5</h3>
+									</span>
+								</p>
+							</div>
+							<div class="zmssss">
+								<p>
+									<img src="//res.nba.cn/media/img/players/head/260x190/203076.png" width="45px">
+								<p>
+								<p>
+									<img src="//res.nba.cn/media/img/players/head/260x190/203076.png" width="45px">
+								<p>
+								<p>
+									<img src="//res.nba.cn/media/img/players/head/260x190/203076.png" width="45px">
+								<p>
+								<p>
+									<img src="//res.nba.cn/media/img/players/head/260x190/203076.png" width="45px">
+								<p>
+							</div>
+							<div class="shujux">
+								<p class="shujuxx">
+									<span><a href="#">安东尼-戴维斯</a></span>
+									</br>
+									<span>3 前锋-中锋 / 湖人
+									</span>
+
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">拉塞尔-威斯布鲁克</a></span>
+									</br>
+									<span>0 后卫 / 湖人
+									</span>
+
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">卡梅隆-安东尼</a></span>
+									</br>
+									<span>7 前锋 / 湖人
+									</span>
+								</p>
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">塔伦-霍顿-塔克</a></span>
+									</br>
+									<span>5 后卫 / 湖人
+									</span>
+								</p>
+							</div>
+							<div class="shuzix">
+								<p>
+									<span>23.3</span>
+								</p>
+								<p>
+									<span>19.8</span>
+								</p>
+								<p>
+									<span>13.1</span>
+								</p>
+								<p>
+									<span>10.9</span>
+								</p>
+							</div>
+						</div>
+						<div id="tabs-2">
+							<p><img src="https://res.nba.cn/media/img/players/silos/440x700/203076.png" width="150px"
+									class="selected">
+							</p>
+							<div class="zms">
+								<!-- 詹姆斯-->
+								<p>
+
+									<span>1</span>
+								</p>
+							</div>
+							<div class="zmss">
+								<p>
+								<h3>
+									<span><a href="#">安东尼</a>
+									</span>
+								</h3>
+								<h3>
+									<span><a href="#">戴维斯</a>
+									</span>
+								</h3>
+								</p>
+								<p>
+									<b>
+										<span>
+											3 前锋-中锋/
+										</span>:
+									</b> <a href="#">洛杉矶 湖人</a>
+								</p>
+								<p>
+									<span>
+										<h3>9.7<h3>
+									</span>
+								</p>
+							</div>
+							<div class="zmsss">
+								<p>
+									<span>
+										<h3>2</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>3</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>4</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>5</h3>
+									</span>
+								</p>
+							</div>
+							<div class="zmssss">
+								<p>
+									<img src="	https://res.nba.cn/media/img/players/head/260x190/2544.png" width="45px">
+								<p>
+								<p>
+									<img src="https://res.nba.cn/media/img/players/head/260x190/201566.png"
+										width="45px">
+								<p>
+								<p>
+									<img src="	https://res.nba.cn/media/img/players/head/260x190/2730.png" width="45px">
+								<p>
+								<p>
+									<img src="https://res.nba.cn/media/img/players/head/260x190/2546.png" width="45px">
+								<p>
+							</div>
+							<div class="shujux">
+								<p class="shujuxx">
+									<span><a href="#">勒布朗-詹姆斯</a></span>
+									</br>
+									<span>6 前锋 / 湖人
+									</span>
+
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">拉塞尔-威斯布鲁克</a></span>
+									</br>
+									<span>0 后卫 / 湖人
+									</span>
+
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">德怀特-霍华德</a></span>
+									</br>
+									<span>39 中锋-前锋/ 湖人
+									</span>
+
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">卡梅隆-安东尼</a></span>
+									</br>
+									<span>7 前锋 / 湖人
+									</span>
+								</p>
+							</div>
+							<div class="shuzix">
+								<p>
+									<span>8.2</span>
+								</p>
+								<p>
+									<span>7.5</span>
+								</p>
+								<p>
+									<span>5.6</span>
+								</p>
+								<p>
+									<span>4.2</span>
+								</p>
+							</div>
+						</div>
+						<div id="tabs-3">
+							<p><img src="	https://res.nba.cn/media/img/players/silos/440x700/201566.png" width="150px"
+									class="selected">
+							</p>
+							<div class="zms">
+								<!-- 詹姆斯-->
+								<p>
+
+									<span>1</span>
+								</p>
+							</div>
+							<div class="zmss">
+								<p>
+								<h3>
+									<span><a href="#">拉塞尔</a>
+									</span>
+								</h3>
+								<h3>
+									<span><a href="#">威斯布鲁克</a>
+									</span>
+								</h3>
+								</p>
+								<p>
+									<b>
+										<span>
+											0 后卫 /
+										</span>:
+									</b> <a href="#">洛杉矶 湖人</a>
+								</p>
+								<p>
+									<span>
+										<h3>7.1<h3>
+									</span>
+								</p>
+							</div>
+							<div class="zmsss">
+								<p>
+									<span>
+										<h3>2</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>3</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>4</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>5</h3>
+									</span>
+								</p>
+							</div>
+							<div class="zmssss">
+								<p>
+									<img src="https://res.nba.cn/media/img/players/head/260x190/2544.png" width="45px">
+								<p>
+								<p>
+									<img src="https://res.nba.cn/media/img/players/head/260x190/203076.png"
+										width="45px">
+								<p>
+								<p>
+									<img src="	https://res.nba.cn/media/img/players/head/260x190/1629659.png"
+										width="45px">
+								<p>
+								<p>
+									<img src="https://res.nba.cn/media/img/players/head/260x190/1628370.png"
+										width="45px">
+								<p>
+							</div>
+							<div class="shujux">
+								<p class="shujuxx">
+									<span><a href="#">勒布朗-詹姆斯</a></span>
+									</br>
+									<span>6 前锋 / 湖人
+									</span>
+
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">安东尼-戴维斯</a></span>
+									</br>
+									<span>3 前锋-中锋 / 湖人
+									</span>
+
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">塔伦-霍顿-塔克</a></span>
+									</br>
+									<span>5 后卫 / 湖人
+									</span>
+								</p>
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">马利克-蒙克</a></span>
+									</br>
+									<span>11 后卫 / 湖人
+									</span>
+								</p>
+							</div>
+							<div class="shuzix">
+								<p>
+									<span>6.2</span>
+								</p>
+								<p>
+									<span>2.9</span>
+								</p>
+								<p>
+									<span>2.7</span>
+								</p>
+								<p>
+									<span>2.6</span>
+								</p>
+							</div>
+						</div>
+						<div id="tabs-4">
+							<p><img src="https://res.nba.cn/media/img/players/silos/440x700/2544.png" width="150px"
+									class="selected">
+							</p>
+							<div class="zms">
+								<!-- 詹姆斯-->
+								<p>
+
+									<span>1</span>
+								</p>
+							</div>
+							<div class="zmss">
+								<p>
+								<h3>
+									<span><a href="#">勒布朗</a>
+									</span>
+								</h3>
+								<h3>
+									<span><a href="#">詹姆斯</a>
+									</span>
+								</h3>
+								</p>
+								<p>
+									<b>
+										<span>
+											6前锋/
+										</span>:
+									</b> <a href="#">洛杉矶 湖人</a>
+								</p>
+								<p>
+									<span>
+										<h3>1.4<h3>
+									</span>
+								</p>
+							</div>
+							<div class="zmsss">
+								<p>
+									<span>
+										<h3>2</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>3</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>4</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>5</h3>
+									</span>
+								</p>
+							</div>
+							<div class="zmssss">
+								<p>
+									<img src="	https://res.nba.cn/media/img/players/head/260x190/203076.png"
+										width="45px">
+								<p>
+								<p>
+									<img src="	https://res.nba.cn/media/img/players/head/260x190/201566.png"
+										width="45px">
+								<p>
+								<p>
+									<img src="https://res.nba.cn/media/img/players/head/260x190/1629659.png"
+										width="45px">
+								<p>
+								<p>
+									<img src="	https://res.nba.cn/media/img/players/head/260x190/202340.png"
+										width="45px">
+								<p>
+							</div>
+							<div class="shujux">
+								<p class="shujuxx">
+									<span><a href="#">安东尼-戴维斯</a></span>
+									</br>
+									<span>3 前锋-中锋 / 湖人
+									</span>
+
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">拉塞尔-威斯布鲁克</a></span>
+									</br>
+									<span>0 后卫 / 湖人
+									</span>
+
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">塔伦-霍顿-塔克</a></span>
+									</br>
+									<span>5 后卫 / 湖人
+									</span>
+								</p>
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">埃弗里-布拉德利</a></span>
+									</br>
+									<span>20 后卫 / 湖人
+									</span>
+								</p>
+							</div>
+							<div class="shuzix">
+								<p>
+									<span>1.2</span>
+								</p>
+								<p>
+									<span>1.0</span>
+								</p>
+								<p>
+									<span>0.9</span>
+								</p>
+								<p>
+									<span>0.9</span>
+								</p>
+							</div>
+						</div>
+						<div id="tabs-5">
+							<p><img src="https://res.nba.cn/media/img/players/silos/440x700/203076.png" width="150px"
+									class="selected">
+							</p>
+							<div class="zms">
+								<!-- 詹姆斯-->
+								<p>
+
+									<span>1</span>
+								</p>
+							</div>
+							<div class="zmss">
+								<p>
+								<h3>
+									<span><a href="#">安东尼</a>
+									</span>
+								</h3>
+								<h3>
+									<span><a href="#">戴维斯</a>
+									</span>
+								</h3>
+								</p>
+								<p>
+									<b>
+										<span>
+											3 前锋-中锋/
+										</span>:
+									</b> <a href="#">洛杉矶 湖人</a>
+								</p>
+								<p>
+									<span>
+										<h3>2.3<h3>
+									</span>
+								</p>
+							</div>
+							<div class="zmsss">
+								<p>
+									<span>
+										<h3>2</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>3</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>4</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>5</h3>
+									</span>
+								</p>
+							</div>
+							<div class="zmssss">
+								<p>
+									<img src="https://res.nba.cn/media/img/players/head/260x190/2544.png" width="45px">
+								<p>
+								<p>
+									<img src="https://res.nba.cn/media/img/players/head/260x190/2546.png" width="45px">
+								<p>
+								<p>
+									<img src="	https://res.nba.cn/media/img/players/head/260x190/2730.png" width="45px">
+								<p>
+								<p>
+									<img src="https://res.nba.cn/media/img/players/head/260x190/1629659.png"
+										width="45px">
+								<p>
+							</div>
+							<div class="shujux">
+								<p class="shujuxx">
+									<span><a href="#">勒布朗-詹姆斯</a></span>
+									</br>
+									<span>6 前锋 / 湖人
+									</span>
+
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">卡梅隆-安东尼</a></span>
+									</br>
+									<span>7 前锋 / 湖人
+									</span>
+
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">德怀特-霍华德</a></span>
+									</br>
+									<span>39 中锋-前锋 / 湖人
+									</span>
+								</p>
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">塔伦-霍顿-塔克</a></span>
+									</br>
+									<span>5 后卫 / 湖人
+									</span>
+								</p>
+							</div>
+							<div class="shuzix">
+								<p>
+									<span>1.1</span>
+								</p>
+								<p>
+									<span>0.8</span>
+								</p>
+								<p>
+									<span>0.6</span>
+								</p>
+								<p>
+									<span>0.5</span>
+								</p>
+							</div>
+						</div>
+						<div id="tabs-6">
+							<p><img src="	https://res.nba.cn/media/img/players/silos/440x700/2730.png" width="150px"
+									class="selected">
+							</p>
+							<div class="zms">
+								<!-- 詹姆斯-->
+								<p>
+
+									<span>1</span>
+								</p>
+							</div>
+							<div class="zmss">
+								<p>
+								<h3>
+									<span><a href="#">德怀特</a>
+									</span>
+								</h3>
+								<h3>
+									<span><a href="#">霍华德</a>
+									</span>
+								</h3>
+								</p>
+								<p>
+									<b>
+										<span>
+											39 中锋-前锋/
+										</span>:
+									</b> <a href="#">洛杉矶 湖人</a>
+								</p>
+								<p>
+									<span>
+										<h3>66.7%<h3>
+									</span>
+								</p>
+							</div>
+							<div class="zmsss">
+								<p>
+									<span>
+										<h3>2</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>3</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>4</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>5</h3>
+									</span>
+								</p>
+							</div>
+							<div class="zmssss">
+								<p>
+									<img src="https://res.nba.cn/media/img/players/head/260x190/1628370.png"
+										width="45px">
+								<p>
+								<p>
+									<img src="https://res.nba.cn/media/img/players/head/260x190/201961.png"
+										width="45px">
+								<p>
+								<p>
+									<img src="	https://res.nba.cn/media/img/players/head/260x190/2546.png" width="45px">
+								<p>
+								<p>
+									<img src="https://res.nba.cn/media/img/players/head/260x190/202340.png"
+										width="45px">
+								<p>
+							</div>
+							<div class="shujux">
+								<p class="shujuxx">
+									<span><a href="#">马利克-蒙克</a></span>
+									</br>
+									<span>11 后卫 / 湖人
+									</span>
+
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">韦恩-艾灵顿</a></span>
+									</br>
+									<span>2 后卫 / 湖人
+									</span>
+
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">卡梅隆-安东尼</a></span>
+									</br>
+									<span>7 前锋 / 湖人
+									</span>
+								</p>
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">埃弗拉-布拉德利</a></span>
+									</br>
+									<span>20 后卫 / 湖人
+									</span>
+								</p>
+							</div>
+							<div class="shuzix">
+								<p>
+									<span>39.8%</span>
+								</p>
+								<p>
+									<span>39.2%</span>
+								</p>
+								<p>
+									<span>39.1%</span>
+								</p>
+								<p>
+									<span>38.4%</span>
+								</p>
+							</div>
+						</div>
+						<div id="tabs-7">
+							<p><img src="https://res.nba.cn/media/img/players/silos/440x700/2730.png" width="150px"
+									class="selected">
+							</p>
+							<div class="zms">
+								<!-- 詹姆斯-->
+								<p>
+
+									<span>1</span>
+								</p>
+							</div>
+							<div class="zmss">
+								<p>
+								<h3>
+									<span><a href="#">德怀特</a>
+									</span>
+								</h3>
+								<h3>
+									<span><a href="#">霍华德</a>
+									</span>
+								</h3>
+								</p>
+								<p>
+									<b>
+										<span>
+											39 中锋-前锋/
+										</span>:
+									</b> <a href="#">洛杉矶 湖人</a>
+								</p>
+								<p>
+									<span>
+										<h3>60.9%<h3>
+									</span>
+								</p>
+							</div>
+							<div class="zmsss">
+								<p>
+									<span>
+										<h3>2</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>3</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>4</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>5</h3>
+									</span>
+								</p>
+							</div>
+							<div class="zmssss">
+								<p>
+									<img src="	https://res.nba.cn/media/img/players/head/260x190/203076.png"
+										width="45px">
+								<p>
+								<p>
+									<img src="	https://res.nba.cn/media/img/players/head/260x190/2544.png" width="45px">
+								<p>
+								<p>
+									<img src="https://res.nba.cn/media/img/players/head/260x190/1630559.png"
+										width="45px">
+								<p>
+								<p>
+									<img src="https://res.nba.cn/media/img/players/head/260x190/1626169.png"
+										width="45px">
+								<p>
+							</div>
+							<div class="shujux">
+								<p class="shujuxx">
+									<span><a href="#">安东尼-戴维斯</a></span>
+									</br>
+									<span>3 前锋-中锋 / 湖人
+									</span>
+
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">勒布朗-詹姆斯</a></span>
+									</br>
+									<span>6 前锋 / 湖人
+									</span>
+
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">奥斯丁-里维斯</a></span>
+									</br>
+									<span>15 后卫 / 湖人
+									</span>
+								</p>
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">斯坦利-约翰逊</a></span>
+									</br>
+									<span>14 前锋-后卫 / 湖人
+									</span>
+								</p>
+							</div>
+							<div class="shuzix">
+								<p>
+									<span>53.7%</span>
+								</p>
+								<p>
+									<span>52.3%</span>
+								</p>
+								<p>
+									<span>47.6%</span>
+								</p>
+								<p>
+									<span>47.0%</span>
+								</p>
+							</div>
+						</div>
+						<div id="tabs-8">
+							<p><img src="	https://res.nba.cn/media/img/players/silos/440x700/201571.png" width="150px"
+									class="selected">
+							</p>
+							<div class="zms">
+								<!-- 詹姆斯-->
+								<p>
+
+									<span>1</span>
+								</p>
+							</div>
+							<div class="zmss">
+								<p>
+								<h3>
+									<span><a href="#">DJ</a>
+									</span>
+								</h3>
+								<h3>
+									<span><a href="#">奥古斯丁</a>
+									</span>
+								</h3>
+								</p>
+								<p>
+									<b>
+										<span>
+											4 后卫/
+										</span>:
+									</b> <a href="#">洛杉矶 湖人</a>
+								</p>
+								<p>
+									<span>
+										<h3>100.0%<h3>
+									</span>
+								</p>
+							</div>
+							<div class="zmsss">
+								<p>
+									<span>
+										<h3>2</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>3</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>4</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>5</h3>
+									</span>
+								</p>
+							</div>
+							<div class="zmssss">
+								<p>
+									<img src="	https://res.nba.cn/media/img/players/head/260x190/202340.png"
+										width="45px">
+								<p>
+								<p>
+									<img src="	https://res.nba.cn/media/img/players/head/260x190/1630559.png"
+										width="45px">
+								<p>
+								<p>
+									<img src="https://res.nba.cn/media/img/players/head/260x190/2546.png" width="45px">
+								<p>
+								<p>
+									<img src="https://res.nba.cn/media/img/players/head/260x190/201961.png"
+										width="45px">
+								<p>
+							</div>
+							<div class="shujux">
+								<p class="shujuxx">
+									<span><a href="#">埃弗里-布拉德利</a></span>
+									</br>
+									<span>20 后卫 / 湖人
+									</span>
+
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">奥斯丁</a></span>
+									</br>
+									<span>15 后卫 / 湖人
+									</span>
+
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">卡梅隆-安东尼</a></span>
+									</br>
+									<span>7 前锋 / 湖人
+									</span>
+								</p>
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">韦德-艾灵顿</a></span>
+									</br>
+									<span>2 后卫 / 湖人
+									</span>
+								</p>
+							</div>
+							<div class="shuzix">
+								<p>
+									<span>87.5%</span>
+								</p>
+								<p>
+									<span>83.8%</span>
+								</p>
+								<p>
+									<span>83.7%</span>
+								</p>
+								<p>
+									<span>80.0%</span>
+								</p>
+							</div>
+						</div>
+						<div id="tabs-9">
+							<p><img src="https://res.nba.cn/media/img/players/silos/440x700/2544.png" width="150px"
+									class="selected">
+							</p>
+							<div class="zms">
+								<!-- 詹姆斯-->
+								<p>
+
+									<span>1</span>
+								</p>
+							</div>
+							<div class="zmss">
+								<p>
+								<h3>
+									<span><a href="#">勒布朗</a>
+									</span>
+								</h3>
+								<h3>
+									<span><a href="#">詹姆斯</a>
+									</span>
+								</h3>
+								</p>
+								<p>
+									<b>
+										<span>
+											6前锋/
+										</span>:
+									</b> <a href="#">洛杉矶 湖人</a>
+								</p>
+								<p>
+									<span>
+										<h3>36.9<h3>
+									</span>
+								</p>
+							</div>
+							<div class="zmsss">
+								<p>
+									<span>
+										<h3>2</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>3</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>4</h3>
+									</span>
+								</p>
+								<p>
+									<span>
+										<h3>5</h3>
+									</span>
+								</p>
+							</div>
+							<div class="zmssss">
+								<p>
+									<img src="	https://res.nba.cn/media/img/players/head/260x190/203076.png"
+										width="45px">
+								<p>
+								<p>
+									<img src="https://res.nba.cn/media/img/players/head/260x190/201566.png"
+										width="45px">
+								<p>
+								<p>
+									<img src="https://res.nba.cn/media/img/players/head/260x190/2546.png" width="45px">
+								<p>
+								<p>
+									<img src="https://res.nba.cn/media/img/players/head/260x190/1628370.png"
+										width="45px">
+								<p>
+							</div>
+							<div class="shujux">
+								<p class="shujuxx">
+									<span><a href="#">安东尼-戴维斯</a></span>
+									</br>
+									<span>3 前锋-中锋 / 湖人
+									</span>
+
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">拉塞尔-威斯布鲁克</a></span>
+									</br>
+									<span>0 后卫 / 湖人
+									</span>
+
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">卡梅隆-安东尼</a></span>
+									</br>
+									<span>7 前锋 / 湖人
+									</span>
+								</p>
+								</p>
+								<p class="shujuxx">
+									<span><a href="#">马利克-蒙克</a></span>
+									</br>
+									<span>11 后卫 / 湖人
+									</span>
+								</p>
+							</div>
+							<div class="shuzix">
+								<p>
+									<span>23.1</span>
+								</p>
+								<p>
+									<span>18.0</span>
+								</p>
+								<p>
+									<span>13.7</span>
+								</p>
+								<p>
+									<span>12.9</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="background-color: #000;" id="ddbu">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm">
+								<h5>关于</h5>
+								<a href="https://careers.nba.com/">NBA就职机会</a>
+							</div>
+							<div class="col-sm">
+								<h5>赛事</h5>
+								<a href="#">jr.NBA高中赛</a>
+							</div>
+							<div class="col-sm">
+								<h5>专题</h5>
+								<a href="https://careers.nba.com/">休赛季转会</a><br>
+								<a href="https://china.nba.cn/draft/">2016选秀大会</a><br>
+								<a href="https://china.nba.cn/topics/association.htm">联盟的骄傲</a><br>
+								<a href="https://china.nba.cn/topics/summerofslam.htm">扣响盛夏</a>
+							</div>
+							<div class="col-sm">
+								<h5>NBA101</h5>
+								<a href="https://china.nba.cn/topics/history.htm">NBA历史</a><br>
+								<a href="https://china.nba.cn/topics/50players.htm">50大球星</a><br>
+								<a href="https://china.nba.cn/topics/faq/index.htm">NBA知识Q&A</a>
+							</div>
+							<div class="col-sm">
+								<h5>手机看比赛 下载APP</h5>
+								<img src="https://res.nba.cn/static/app/android/apk_qr.png" width="100px"
+									height="100px">
+							</div>
+						</div>
+						<div align="center" style="margin-top: 30px; color: gray; font-size: 21px;">
+							<span>
+								©2021年著作权 NBA 中国所有权。
+								<a href="https://beian.miit.gov.cn/">京ICP备06066266号-6</a>
+							</span><br />
+							<span><a href="https://china.nba.cn/article/index.htm?articleId=20150623047888"
+									target="_blank">china.nba.cn</a>上除去<a
+									href="https://china.nba.cn/article/index.htm?articleId=20150623047888"
+									target="_blank">使用条款</a>中所特别提及的部分之外，其它任何内容都不得以任何形式被复制、再传播，或篡改。</span><br />
+							<span>进入<a href="https://china.nba.cn/" target="_blank">china.nba.cn</a>，即表示阁下同意遵守<a
+									href="https://china.nba.cn/" target="_blank">china.nba.cn</a>的<a
+									href="https://china.nba.cn/article/index.htm?articleId=20150623047968">隐私政策</a>和<a
+									href="https://china.nba.cn/article/index.htm?articleId=20150623047888">使用条款。</a></span><br />
+							<span>有任何的建议和意见，都欢迎联络我们：<a href="#">NBAChinaInfo@nba.com</a></span><br />
+							<span>有关NBA商品授权合作事宜，敬请联系:<a href="#">GMGChinaBusinessInquiry@nba.com</a></span><br />
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+</html>
